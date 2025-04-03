@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiftShare | Ride Together, Save Together</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loader">
+        <div class="loader-car">
+            <i class="fas fa-car-side"></i>
+        </div>
+        <div class="loader-road"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar container">
+            <div class="logo">
+                <i class="fas fa-car-side"></i>
+                <span>LiftShare</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#how-it-works">How it works</a></li>
+                <li><a href="#safety">Safety</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li class="auth-buttons">
+                    <a href="#" class="btn btn-outline">Log in</a>
+                    <a href="#" class="btn btn-primary">Sign up</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="animate-from-left">Share your ride, <span class="highlight-text">share the joy</span></h1>
+                    <p class="animate-from-left delay-1">Connect with people going your way and save on travel costs</p>
+                    <div class="cta-buttons animate-from-left delay-2">
+                        <a href="#search" class="btn btn-primary btn-large pulse-animation">Find a ride</a>
+                        <a href="#search" class="btn btn-secondary btn-large">Offer a ride</a>
+                    </div>
+                </div>
+                <div class="hero-image animate-from-right">
+                    <img src="img.png" alt="People carpooling" class="floating-animation">
+                </div>
+            </div>
+        </section>
+
+        <!-- Search Form -->
+        <section class="search-form" id="search">
+            <div class="container">
+                <div class="form-container slide-up-animation">
+                    <div class="tabs">
+                        <button class="tab active" data-tab="find">Find a ride</button>
+                        <button class="tab" data-tab="offer">Offer a ride</button>
+                    </div>
+                    <form id="ride-form">
+                        <div class="form-group">
+                            <label for="from"><i class="fas fa-map-marker-alt"></i> From</label>
+                            <input type="text" id="from" placeholder="Enter pickup location">
+                        </div>
+                        <div class="form-group">
+                            <label for="to"><i class="fas fa-flag-checkered"></i> To</label>
+                            <input type="text" id="to" placeholder="Enter dropoff location">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date"><i class="far fa-calendar-alt"></i> Date</label>
+                                <input type="date" id="date">
+                            </div>
+                            <div class="form-group">
+                                <label for="time"><i class="far fa-clock"></i> Time</label>
+                                <input type="time" id="time">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block pulse-animation">Search rides</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="how-it-works" id="how-it-works">
+            <div class="container">
+                <h2 class="section-title animate-from-bottom">How LiftShare works</h2>
+                <div class="steps">
+                    <div class="step animate-step delay-1">
+                        <div class="step-icon">
+                            <i class="fas fa-search-location"></i>
+                        </div>
+                        <h3>1. Find or offer</h3>
+                        <p>Search for rides going your way or offer your empty seats to others.</p>
+                    </div>
+                    <div class="step animate-step delay-2">
+                        <div class="step-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>2. Connect</h3>
+                        <p>Message the driver/rider to confirm details and arrange pickup.</p>
+                    </div>
+                    <div class="step animate-step delay-3">
+                        <div class="step-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <h3>3. Ride together</h3>
+                        <p>Meet up, verify with OTP, and enjoy the journey together.</p>
+                    </div>
+                    <div class="step animate-step delay-4">
+                        <div class="step-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>4. Rate & repeat</h3>
+                        <p>Leave a review and build your community reputation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Safety Section -->
+        <section class="safety" id="safety">
+            <div class="container safety-container">
+                <div class="safety-content">
+                    <h2 class="section-title animate-from-left">Your safety is our <span class="highlight-text">priority</span></h2>
+                    <div class="safety-features">
+                        <div class="feature animate-from-bottom delay-1">
+                            <i class="fas fa-id-card"></i>
+                            <h3>Verified profiles</h3>
+                            <p>All users must verify their phone number and email.</p>
+                        </div>
+                        <div class="feature animate-from-bottom delay-2">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>OTP verification</h3>
+                            <p>Unique one-time password ensures you meet the right person.</p>
+                        </div>
+                        <div class="feature animate-from-bottom delay-3">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <h3>Real-time tracking</h3>
+                            <p>Share your ride details with trusted contacts.</p>
+                        </div>
+                        <div class="feature animate-from-bottom delay-4">
+                            <i class="fas fa-comment-dots"></i>
+                            <h3>In-app chat</h3>
+                            <p>Communicate securely without sharing personal numbers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="safety-image animate-from-right">
+                    <img src="img.png" alt="Safety illustration">
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews -->
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <h2 class="section-title animate-from-bottom">What our community says</h2>
+                <div class="review-cards">
+                    <div class="review-card animate-from-left delay-1">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"LiftShare saved me so much money on my daily commute. I've met some great people too!"</p>
+                        <div class="reviewer">
+                            <img src="1.png" alt="Sarah" loading="lazy">
+                            <span>Sarah, Daily commuter</span>
+                        </div>
+                    </div>
+                    <div class="review-card animate-from-bottom delay-2">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>"As a driver, it's nice to have company and help cover fuel costs. The app is super easy to use."</p>
+                        <div class="reviewer">
+                            <img src="2.webp" alt="Raj" loading="lazy">
+                            <span>Raj, Weekend driver</span>
+                        </div>
+                    </div>
+                    <div class="review-card animate-from-right delay-3">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Perfect for students like me! I've made friends and saved money on trips home from university."</p>
+                        <div class="reviewer">
+                            <img src="3.jpeg" alt="Priya" loading="lazy">
+                            <span>Priya, Student</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <h2 class="animate-from-bottom">Ready to ride together?</h2>
+                <p class="animate-from-bottom delay-1">Join thousands of people sharing rides every day</p>
+                <div class="cta-buttons animate-from-bottom delay-2">
+                    <a href="#search" class="btn btn-primary btn-large pulse-animation">Find a ride</a>
+                    <a href="#search" class="btn btn-secondary btn-large">Offer a ride</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>LiftShare</h3>
+                    <p>Connecting people going the same way since 2023. Share rides, save money, reduce traffic.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Safety</a></li>
+                        <li><a href="#">Community Guidelines</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Download</h3>
+                    <div class="download-buttons">
+                        <a href="#" class="download-btn">
+                            <i class="fab fa-apple"></i>
+                            <span>App Store</span>
+                        </a>
+                        <a href="#" class="download-btn">
+                            <i class="fab fa-google-play"></i>
+                            <span>Google Play</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 LiftShare. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top pulse-animation">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
